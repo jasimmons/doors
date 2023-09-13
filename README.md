@@ -9,6 +9,13 @@ $ ./dev/run
 Running on port :8080
 ```
 
+Once running, pass the `class` query parameter to get a "suggestion" of key order to use:
+
+```bash
+$ curl "localhost:8080?class=monk"
+map[keys:[1 2 4 3]]
+```
+
 Optionally, you may provide a `PORT` environment variable to change to listening on another port.
 
 ```bash
